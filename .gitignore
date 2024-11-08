@@ -1,2 +1,7 @@
 /scss
-/img
+/img/*.png
+/img/*.jpg
+/img/about
+/img/hero
+/img/libros
+
