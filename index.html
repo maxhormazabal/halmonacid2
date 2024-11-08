@@ -33,13 +33,20 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="scss/bootstrap.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
+
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/tu_numero?text=Hola!%20Me%20gustaría%20hablar%20contigo." target="_blank" class="whatsapp-button">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -73,36 +80,11 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
               <a href="index.html" class="nav-item nav-link active">Inicio</a>
-              <a href="about.html" class="nav-item nav-link">Sobre Mi</a>
+              <a href="about.html" class="nav-item nav-link">Sobre Mí</a>
               <a href="service.html" class="nav-item nav-link">Servicios</a>
               <a href="project.html" class="nav-item nav-link">Libros</a>
-              <a href="faq.html" class="nav-item nav-link">Material Gratis</a>
-              <div class="nav-item dropdown">
-                <a
-                  href="#"
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  >Pages</a
-                >
-                <div class="dropdown-menu bg-light mt-2">
-                  <a href="feature.html" class="dropdown-item">Features</a>
-                  <a href="team.html" class="dropdown-item">Our Team</a>
-                  <a href="faq.html" class="dropdown-item">FAQs</a>
-                  <a href="testimonial.html" class="dropdown-item"
-                    >Testimonial</a
-                  >
-                  <a href="404.html" class="dropdown-item">404 Page</a>
-                </div>
-              </div>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
+
             </div>
-            <!-- <butaton
-              type="button"
-              class="btn text-white p-0 d-none d-lg-block"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-              ><i class="fa fa-search"></i
-            ></butaton> -->
           </div>
         </nav>
       </div>
@@ -141,7 +123,7 @@
             >
           </div>
           <div class="col-lg-6 align-self-end text-center text-lg-end">
-            <img class="hero-img img-fluid" src="img/hero/cover.png" alt="" />
+            <img class="img-fluid" src="img/hero/hero.png" alt="" />
           </div>
         </div>
       </div>
@@ -213,19 +195,18 @@
             <div class="row g-3">
               <div class="col-sm-6">
                 <h6 class="mb-3">
-                  <i class="fa fa-check text-primary me-2"></i>Award Winning
+                  <i class="fa fa-check text-primary me-2"></i>Pensamiento Analítico
                 </h6>
                 <h6 class="mb-0">
-                  <i class="fa fa-check text-primary me-2"></i>Professional
-                  Staff
+                  <i class="fa fa-check text-primary me-2"></i>Resolución de Problemas
                 </h6>
               </div>
               <div class="col-sm-6">
                 <h6 class="mb-3">
-                  <i class="fa fa-check text-primary me-2"></i>24/7 Support
+                  <i class="fa fa-check text-primary me-2"></i>Liderazgo Inspirador
                 </h6>
                 <h6 class="mb-0">
-                  <i class="fa fa-check text-primary me-2"></i>Fair Prices
+                  <i class="fa fa-check text-primary me-2"></i>Comunicación Efectiva
                 </h6>
               </div>
             </div>
@@ -598,382 +579,30 @@
     </div>
     <!-- Case End -->
 
-    <!-- FAQs Start -->
-    <div class="container-fluid py-5">
-      <div class="container py-5">
-        <div
-          class="mx-auto text-center wow fadeIn"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-            Popular FAQs
+        <!-- Newsletter Start -->
+        <!-- <div class="container-fluid bg-primary newsletter py-5">
+          <div class="container">
+              <div class="row g-5 align-items-center">
+                  <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                      <img class="img-fluid" src="img/newsletter.png" alt="">
+                  </div>
+                  <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                      <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
+                      <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
+                      <div class="position-relative w-100 mt-3 mb-2">
+                          <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                              placeholder="Enter Your Email" style="height: 48px;">
+                          <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                  class="fa fa-paper-plane text-primary fs-4"></i></button>
+                      </div>
+                      <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
+                  </div>
+              </div>
           </div>
-          <h1 class="mb-4">Frequently Asked Questions</h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="accordion" id="accordionFAQ1">
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
-                <h2 class="accordion-header" id="headingOne">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    How to build a website?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionFAQ1"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    How long will it take to get a new website?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionFAQ1"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Do you only create HTML websites?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionFAQ1"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
-                <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="true"
-                    aria-controls="collapseFour"
-                  >
-                    Will my website be mobile-friendly?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionFAQ1"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="accordion" id="accordionFAQ2">
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    Will you maintain my site for me?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionFAQ2"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
-                <h2 class="accordion-header" id="headingSix">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
-                    I’m on a strict budget. Do you have any low cost options?
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSix"
-                  data-bs-parent="#accordionFAQ2"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
-                <h2 class="accordion-header" id="headingSeven">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="collapseSeven"
-                  >
-                    Will you maintain my site for me?
-                  </button>
-                </h2>
-                <div
-                  id="collapseSeven"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSeven"
-                  data-bs-parent="#accordionFAQ2"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
-                <h2 class="accordion-header" id="headingEight">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseEight"
-                    aria-expanded="false"
-                    aria-controls="collapseEight"
-                  >
-                    I’m on a strict budget. Do you have any low cost options?
-                  </button>
-                </h2>
-                <div
-                  id="collapseEight"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingEight"
-                  data-bs-parent="#accordionFAQ2"
-                >
-                  <div class="accordion-body">
-                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam
-                    sed sed magna et magna diam aliquyam amet dolore ipsum erat
-                    duo. Sit rebum magna duo labore no diam.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FAQs Start -->
+      </div> -->
+      <!-- Newsletter End -->
 
-    <!-- Team Start -->
-    <div class="container-fluid bg-light py-5">
-      <div class="container py-5">
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-              Our Team
-            </div>
-            <h1 class="mb-4">Meet Our Experienced Team Members</h1>
-            <p class="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
-              sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
-              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
-              tempor eirmod magna dolore erat amet
-            </p>
-            <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
-          </div>
-          <div class="col-lg-7">
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="row g-4">
-                  <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                    <div
-                      class="team-item bg-white text-center rounded p-4 pt-0"
-                    >
-                      <img
-                        class="img-fluid rounded-circle p-4"
-                        src="img/team-1.jpg"
-                        alt=""
-                      />
-                      <h5 class="mb-0">Boris Johnson</h5>
-                      <small>Founder & CEO</small>
-                      <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                    <div
-                      class="team-item bg-white text-center rounded p-4 pt-0"
-                    >
-                      <img
-                        class="img-fluid rounded-circle p-4"
-                        src="img/team-2.jpg"
-                        alt=""
-                      />
-                      <h5 class="mb-0">Adam Crew</h5>
-                      <small>Executive Manager</small>
-                      <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 pt-md-4">
-                <div class="row g-4">
-                  <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                    <div
-                      class="team-item bg-white text-center rounded p-4 pt-0"
-                    >
-                      <img
-                        class="img-fluid rounded-circle p-4"
-                        src="img/team-3.jpg"
-                        alt=""
-                      />
-                      <h5 class="mb-0">Kate Winslet</h5>
-                      <small>Co Founder</small>
-                      <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                    <div
-                      class="team-item bg-white text-center rounded p-4 pt-0"
-                    >
-                      <img
-                        class="img-fluid rounded-circle p-4"
-                        src="img/team-4.jpg"
-                        alt=""
-                      />
-                      <h5 class="mb-0">Cody Gardner</h5>
-                      <small>Project Manager</small>
-                      <div class="d-flex justify-content-center mt-3">
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-instagram"></i
-                        ></a>
-                        <a class="btn btn-square btn-primary m-1" href=""
-                          ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team End -->
+      
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -981,149 +610,213 @@
         <div class="row g-5">
           <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">
-              Testimonial
+              Alianzas Estratégicas
             </div>
-            <h1 class="mb-4">What Say Our Clients!</h1>
+            <h1 class="mb-4">Juntos, Crecemos Más</h1>
             <p class="mb-4">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor
-              sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem
-              et sit, sed stet no labore lorem sit. Sanctus clita duo justo et
-              tempor eirmod magna dolore erat amet
+              Colaboro con expertos y aliados estratégicos, para potenciar aún más el impacto y calidad en cada proyecto. Trabajo mano a mano con profesionales destacados, sumando conocimientos y experiencias que nos permiten innovar y ofrecer soluciones de valor.
             </p>
-            <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+            <!-- <a class="btn btn-primary rounded-pill px-4" href="">Read More</a> -->
           </div>
           <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
             <div
               class="owl-carousel testimonial-carousel border-start border-primary"
             >
-              <div class="testimonial-item ps-5">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid flex-shrink-0 rounded-circle"
-                    src="img/testimonial-1.jpg"
-                    style="width: 60px; height: 60px"
-                  />
-                  <div class="ps-3">
-                    <h5 class="mb-1">Client Name</h5>
-                    <span>Profession</span>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-start mt-3">
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
+            <div class="testimonial-item ps-5">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonials/testimonial-1.jpg"
+                  style="width: 60px; height: 60px"
+                />
+                <div class="ps-3">
+                  <h5 class="mb-1">Diego Ledesma</h5>
+                  <span>Ocupación</span>
                 </div>
               </div>
-              <div class="testimonial-item ps-5">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid flex-shrink-0 rounded-circle"
-                    src="img/testimonial-2.jpg"
-                    style="width: 60px; height: 60px"
-                  />
-                  <div class="ps-3">
-                    <h5 class="mb-1">Client Name</h5>
-                    <span>Profession</span>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-start mt-3">
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
+              <div class="d-flex justify-content-start mt-3">
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="testimonial-item ps-5">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonials/testimonial-1.jpg"
+                  style="width: 60px; height: 60px"
+                />
+                <div class="ps-3">
+                  <h5 class="mb-1">María Cecilia Sanhueza</h5>
+                  <span>Ocupación</span>
                 </div>
               </div>
-              <div class="testimonial-item ps-5">
-                <div class="d-flex align-items-center">
-                  <img
-                    class="img-fluid flex-shrink-0 rounded-circle"
-                    src="img/testimonial-3.jpg"
-                    style="width: 60px; height: 60px"
-                  />
-                  <div class="ps-3">
-                    <h5 class="mb-1">Client Name</h5>
-                    <span>Profession</span>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-start mt-3">
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a class="btn btn-square btn-primary m-1" href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
+              <div class="d-flex justify-content-start mt-3">
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="testimonial-item ps-5">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonials/testimonial-1.jpg"
+                  style="width: 60px; height: 60px"
+                />
+                <div class="ps-3">
+                  <h5 class="mb-1">Humberto Sepúlveda </h5>
+                  <span>Ocupación</span>
                 </div>
               </div>
+              <div class="d-flex justify-content-start mt-3">
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="testimonial-item ps-5">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonials/testimonial-1.jpg"
+                  style="width: 60px; height: 60px"
+                />
+                <div class="ps-3">
+                  <h5 class="mb-1">Maximiliano Hormazabal</h5>
+                  <span>Ocupación</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-start mt-3">
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="testimonial-item ps-5">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonials/testimonial-1.jpg"
+                  style="width: 60px; height: 60px"
+                />
+                <div class="ps-3">
+                  <h5 class="mb-1">Bárbara Arias Avello</h5>
+                  <span>Ocupación</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-start mt-3">
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="testimonial-item ps-5">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonials/testimonial-1.jpg"
+                  style="width: 60px; height: 60px"
+                />
+                <div class="ps-3">
+                  <h5 class="mb-1">Monarca Estudio</h5>
+                  <span>Ocupación</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-start mt-3">
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="testimonial-item ps-5">
+              <div class="d-flex align-items-center">
+                <img
+                  class="img-fluid flex-shrink-0 rounded-circle"
+                  src="img/testimonials/testimonial-1.jpg"
+                  style="width: 60px; height: 60px"
+                />
+                <div class="ps-3">
+                  <h5 class="mb-1">APLOG (Asociación de Profesionales de Logística de Chile)</h5>
+                  <span>Ocupación</span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-start mt-3">
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-square btn-primary m-1" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Testimonial End -->
-
-    <!-- Newsletter Start -->
-    <!-- <div class="container-fluid bg-primary newsletter py-5">
-      <div class="container">
-        <div class="row g-5 align-items-center">
-          <div
-            class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn"
-            data-wow-delay="0.3s"
-          >
-            <img class="img-fluid" src="img/newsletter.png" alt="" />
-          </div>
-          <div
-            class="col-md-7 py-5 newsletter-text wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">
-              Newsletter
-            </div>
-            <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
-            <div class="position-relative w-100 mt-3 mb-2">
-              <input
-                class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                type="text"
-                placeholder="Enter Your Email"
-                style="height: 48px"
-              />
-              <button
-                type="button"
-                class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-              >
-                <i class="fa fa-paper-plane text-primary fs-4"></i>
-              </button>
-            </div>
-            <small class="text-white-50"
-              >Diam sed sed dolor stet amet eirmod</small
-            >
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Newsletter End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
@@ -1197,11 +890,6 @@
       </div>
     </div>
     <!-- Footer End -->
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
